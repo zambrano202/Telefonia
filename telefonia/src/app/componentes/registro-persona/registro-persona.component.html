@@ -1,0 +1,49 @@
+<div class="col-sm-5" id="form-reg">
+    <form action="" method="post" id="form-registro">
+        <div class="col-sm-12" id="h1-r">
+            <h1 class="text-center">Registro de personas</h1>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-12">
+                <label for="perNombre" class="fas fa-sort-numeric-up"> Nombre</label>
+                <input type="text" class="form-control" name="perNombre" placeholder="Ingrese nombre"
+                    [(ngModel)]="credential.perNombre" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="perApellido" class="fas fa-user"> Apellido </label>
+                <input type="text" class="form-control" name="perApellido" placeholder="Ingrese Apellido"
+                    [(ngModel)]="credential.perApellido" required>
+            </div>
+
+
+            <div class="form-group col-sm-6">
+                <label for="perTelefonoFijo" class="fas fa-id-badge"> Telefono Fijo</label>
+                <input type="text" class="form-control" name="perTelefonoFijo" placeholder="Ingrese telefono fijo"
+                    [(ngModel)]="credential.perTelefonoFijo" required>
+            </div>
+        </div>
+
+        <div class="form-group col-sm-6">
+            <label for="perFechaDeNacimiento" class="fas fa-id-badge"> Fecha de nacimiento</label>
+            <input type="text" class="form-control" name="perFechaDeNacimiento" placeholder="Ingrese Fecha de naciento"
+                [(ngModel)]="credential.perFechaDeNacimiento" required>
+
+
+
+            <div class="form-group col-sm-6">
+                <label for="perCedula" class="fas fa-user"> Cedula</label>
+                <input type="text" class="form-control" name="perCedula" placeholder="Ingrese cedula"
+                    [(ngModel)]="credential.perCedula" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success col-12" id="button">
+            <i class="fas fa-sign-in-alt"> </i> Registrame
+        </button>
+
+
+    </form>
+</div>

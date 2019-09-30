@@ -1,0 +1,38 @@
+<div class="col-sm-5" id="form-reg">
+  <form action="" method="post" id="form-registro">
+      <div class="col-sm-12" id="h1-r">
+          <h1 class="text-center">Registro de Lineas</h1>
+      </div>
+
+      <div class="row">
+          <div class="form-group col-sm-12">
+              <label for="linumerolinea" class="fas fa-sort-numeric-up"> Numero de linea</label>
+              <input type="text" class="form-control" name="linumerolinea" placeholder="Ingrese numero de linea"
+                  [(ngModel)]="credential.linumerolinea" required>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="form-group col-sm-6">
+              <label for="perCedula" class="fas fa-user"> Cedula </label>
+              <input type="text" class="form-control" name="perCedula" placeholder="Ingrese cedua"
+                  [(ngModel)]="credential.perCedula" required>
+          </div>
+
+
+          <div class="form-group col-sm-6">
+              <label for="linEstado" class="fas fa-id-badge"> Estado de la linea</label>
+              <input type="text" class="form-control" name="linEstado" placeholder="Ingrese estado de la linea"
+                  [(ngModel)]="credential.linEstado" required>
+          </div>
+      </div>
+
+      <button type="submit" class="btn btn-success col-12" id="button">
+          <i class="fas fa-sign-in-alt"> </i> Registrame
+      </button>
+
+
+  </form>
+</div>
+
+    
